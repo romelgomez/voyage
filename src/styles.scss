@@ -1,4 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body {    
+    margin: 0;
+    padding: 0;
+    background: #121217;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}
+.toolbar {
+    padding: 5px 20px;
+    background: rgba(45,45,45,0.98);
+    .line-separator-base {
+        background: whitesmoke;
+        height: 1px;
+        top: -24px;
+        position: relative;
+        z-index: 1;
+    }
+    .line-separator-start {
+        position: absolute;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        left: 18px;
+        top: 5px;
+        font-size: 20px;
+    }
+    .line-separator-end {
+        position: absolute;
+        z-index: 3;
+        padding: 0;
+        margin: 0;
+        right: 18px;
+        top: 18px;
+    }
+    .line-separator-boat {
+        position: absolute;
+        z-index: 4;
+        padding: 0;
+        margin: 0;
+        left: 100px;
+        top: -10px;
+        font-size: 40px;
+    }
+    h1 {
+        padding-left: 20px;
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
